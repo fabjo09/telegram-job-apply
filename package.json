@@ -1,0 +1,29 @@
+{
+  "name": "telegram-job-apply",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monitor a Telegram job group and prepare or send CV applications safely.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "login": "tsx src/login.ts",
+    "chats": "tsx src/list-chats.ts",
+    "check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "nodemailer": "^10.0.8",
+    "teleproto": "^1.230.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  }
+}
